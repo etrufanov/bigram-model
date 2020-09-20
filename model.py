@@ -64,10 +64,3 @@ class TextGenerator:
             cur = np.random.choice(self.bigram_dict[cur])
             sentence += (cur + ' ')
         return sentence[:-1]
-
-# model = TextGenerator()
-# model.fit('text.txt')
-# print('let`s go!')
-# while True:
-#     text = input()
-#     print(model.generate(text))
