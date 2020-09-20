@@ -56,9 +56,9 @@ class TextGenerator:
         else:
             start = np.random.choice([*self.bigram_dict])
         sentence = prefix + ' ' or ''
-        i = 1
+        i = 0
         cur = start
-        max_len = np.random.choice(np.arange(7,20))
+        max_len = np.random.choice(np.arange(7,15))
         while self.bigram_dict.get(cur) and i < max_len:
             i += 1
             cur = np.random.choice(self.bigram_dict[cur])
